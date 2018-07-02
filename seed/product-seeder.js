@@ -1,6 +1,6 @@
 var mongoose =require('mongoose');
 var Product =require('../models/products');
-mongoose.connect('mongodb://happytvuser:3wnf4w06tJ@localhost:27017/happytv');
+mongoose.connect('mongodb://heroku_1v8kc0h2:s5iat4gmk2sqelv02fuqjoe5o9@ds033113.mlab.com:33113/heroku_1v8kc0h2');
 
 var products = [
 new Product({

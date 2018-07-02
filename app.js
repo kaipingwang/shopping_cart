@@ -11,7 +11,7 @@ var session = require('express-session');
 var passport = require('passport');
 var validator = require('express-validator');
 var flash = require('connect-flash');
-mongoose.connect('mongodb://happytvuser:3wnf4w06tJ@localhost:27017/happytv');
+mongoose.connect('mongodb://heroku_1v8kc0h2:s5iat4gmk2sqelv02fuqjoe5o9@ds033113.mlab.com:33113/heroku_1v8kc0h2');
 var MongoStore = require('connect-mongo')(session);
 require('./config/passport');
 var app = express();
