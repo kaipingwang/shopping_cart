@@ -1,0 +1,143 @@
+<head>
+<title>Moviereviews</title>
+<meta charset="utf-8">
+<!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">-->
+<link rel="stylesheet" href="/stylesheets/preview.css" type="text/css" media="all">
+<link rel="stylesheet" href="/stylesheets/colorbox.css" type="text/css" media="all">
+<script src="https://code.jquery.com/jquery-1.12.3.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+<!--[if lt IE 9]><script src="js/modernizr.custom.js"></script><![endif]-->
+<script src="/javascripts/functions.js"></script>
+</head>
+<body>
+<div id="wrapper">
+  <div class="light-bg">
+    <!-- shell -->
+    <div class="shell">
+      <!-- header -->
+      <div class="header">
+        <!-- socials -->
+        <div class="socials"> <a href="#" class="facebook-ico">facebook-ico</a> <a href="#" class="twitter-ico">twitter-ico</a> <a href="#" class="you-tube-ico">you-tube-ico</a> </div>
+        <!-- end of socials -->
+        <h1 id="logo"><a href="#">Moviereviews</a></h1>
+        <!-- navigation -->
+
+        <!-- end of navigation -->
+        <div class="cl">&nbsp;</div>
+      </div>
+      <!-- end of header -->
+      <!-- main -->
+      <div class="main">
+        <!-- content -->
+        <section class="content">
+          <!-- post -->
+          <div class="post">
+            <!-- post-inner -->
+
+            <div class="post-inner">
+              <header>
+                <h2><a href="#">{{product_detail.title}}</a></h2>
+                <div class="cl">&nbsp;</div>
+              </header>
+              <div class="img-holder"> <a href="#">
+                </a>
+                <iframe width="625" height="425" src="{{product_detail.video}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </iframe>
+              </a>
+              </div>
+              <!-- meta -->
+              <div class="meta">
+                <p class="date">{{product_detail.date}}</br>Direced by <a href="#">{{product_detail.actor}}</a></p>
+                <div class="right">
+                  <div class="rating-holder">
+                    <p> Rating </p>
+                    <div class="rating"><span style="width: {{product_detail.rate}}"></span>  </div>
+
+                  </div>
+                  <a href="#" class="comments">{{product_detail.comments}} comments</a> </div>
+                <div class="cl">&nbsp;</div>
+              </div>
+              <!-- end of meta -->
+              <!-- post-cnt -->
+              <div class="post-cnt">
+                <p>  {{product_detail.description}}</p>
+              <!-- end of post-cnt -->
+
+            </div>
+
+            <!-- post-inner -->
+          </div>
+
+          <!-- end of post -->
+          <div class="pagination">
+            <ul>
+              <li class="laquo"><a href="#"><span></span></a></li>
+              <li class="active"><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li class="raquo"><a href="#"><span></span></a></li>
+              <li><a href="#">10</a></li>
+              <li class="dots">. . .</li>
+              <li><a href="#">last</a></li>
+            </ul>
+          </div>
+        </section>
+        <!-- end of content -->
+        <!-- sidebar -->
+        <aside class="sidebar">
+          <div class="widget">
+            <h3 class="widgettitle">Genres</h3>
+            <ul>
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Comedy</a></li>
+              <li><a href="#">Family</a></li>
+              <li><a href="#">History</a></li>
+              <li><a href="#">Mystery</a></li>
+              <li><a href="#">Sci-Fi</a></li>
+              <li><a href="#">War</a></li>
+            </ul>
+          </div>
+          <div class="widget">
+            <h3 class="widgettitle">Opening This Week</h3>
+            <ul>
+              <li><a href="#">The Hunter Games <strong>$98 Mil</strong></a></li>
+              <li><a href="#">American Reunion <strong>$50 Mil</strong></a></li>
+              <li><a href="#">Titanic <strong>$23 Mil</strong></a></li>
+              <li><a href="#">Wrath of the Titans <strong>$50 Mil</strong></a></li>
+              <li><a href="#">Mirror Mirro <strong>$7 Mil</strong></a></li>
+            </ul>
+          </div>
+          <div class="widget socials-widget">
+            <h3 class="widgettitle">Get Connected</h3>
+            <ul>
+              <li><a href="#" class="facebook-ico"><span></span>Facebook</a></li>
+              <li><a href="#" class="twitter-ico"><span></span>Twitter</a></li>
+              <li><a href="#" class="linkedin-ico"><span></span>Linkedin</a></li>
+              <li><a href="#" class="you-tube-ico"><span></span>Youtube</a></li>
+              <li><a href="#" class="rss-ico"><span></span>RSS</a></li>
+            </ul>
+          </div>
+        </aside>
+        <!-- end of sidebar -->
+        <div class="cl">&nbsp;</div>
+      </div>
+      <!-- end of main -->
+      <div class="footer">
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="#">Show All</a></li>
+            <li><a href="#">Latest Movies</a></li>
+            <li><a href="#">Top Rated</a></li>
+            <li><a href="#">Most Commented</a></li>
+          </ul>
+        </nav>
+        <p class="copy">Copyright &copy; 2016 <a target="_blank" href="#"></a></p>
+      </div>
+    </div>
+    <!-- end of shell -->
+  </div>
+</div>
+<!-- end of wrapper -->
+</body>

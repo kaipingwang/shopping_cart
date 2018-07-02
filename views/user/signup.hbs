@@ -1,0 +1,23 @@
+<head>
+<link rel='stylesheet' href='/stylesheets/login.css'>
+</head>
+
+<div class="login-wrap">
+	{{#if hasErrors}}
+				<div class="alert alert-danger">
+						{{# each messages }}
+								<p>{{this}}</p>
+						{{/each}}
+				</div>
+		{{/if}}
+		<div class="login">
+			<div class="avatar">
+			</div>
+			<form id="login" class="login-form" action="/user/signup" method="post">
+			  <input type="email" name="email" class="pass" placeholder="Email"/><span class="arrow">&rarr;</span>
+				<input type="password" name="password" class="pass" placeholder="Password"/><span class="arrow">&rarr;</span>
+				<input type="hidden" name="_csrf" value="{{ csrfToken }}">
+				<button type="submit" class="btn btn-primary">Sign Up</button>
+			</form>
+		</div>
+	</div>

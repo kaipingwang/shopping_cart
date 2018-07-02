@@ -1,0 +1,58 @@
+<head>
+  <link rel='stylesheet' href='/stylesheets/profile.css'>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="/user/about">About</a>
+  <a href="/user/profile">Record</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<div id="main">
+  <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        {{#each orders}}
+          <h1><span class ="fa fa-paper-plane" onclick="openNav()">    {{this.name}} </span></h1>
+        {{/each }}
+          <hr>
+          <h2><span class="fa fa-cart-arrow-down">    My Orders<span></h2>
+          {{# each orders }}
+              <div class="panel panel-default">
+                  <div class="panel-body">
+                      <ul class="list-group">
+                          {{# each this.items }}
+                              <li class="list-group-item">
+                                  <span class="badge">{{ this.price }}</span>
+                                  {{ this.item.title }} | {{ this.qty }} Units
+                              </li>
+                          {{/each}}
+                      </ul>
+                  </div>
+                  <div class="panel-footer">
+                      <strong>Total Price: ${{ this.cart.totalPrice }}</strong>
+                  </div>
+              </div>
+          {{/each}}
+      </div>
+  </div>
+
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
+</script>
+
+</body>

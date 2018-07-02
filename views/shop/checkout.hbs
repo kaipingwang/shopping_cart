@@ -1,0 +1,30 @@
+<head>
+<link rel='stylesheet' href='/stylesheets/payment.css'>
+</head>
+<form >
+  <label>
+    <input name="cardholder-name" class="field is-empty" placeholder="Jane Doe" />
+    <span><span>Name</span></span>
+  </label>
+  <label>
+    <input id="phone-number" class="field is-empty" type="tel" placeholder="(123) 456-7890" />
+    <span><span>Phone number</span></span>
+  </label>
+  <label>
+    <input id="address" class="field is-empty" type="address" placeholder="Fife Park, Strathkinness High Rd, St Andrews" />
+    <span><span>Permanent adress</span></span>
+  </label>
+  <label>
+    <div id="card-element" class="field is-empty" style=" "></div>
+    <span><span>Credit or debit card</span></span>
+  </label>
+  <input type="submit" class="btn btn-success" value="Total: $ {{total}}">
+  <div class="outcome">
+    <div class="error {{#if noError}}hidden{{/if}}" role="alert"></div></div>
+    <div class="success">
+      <span class="token hidden"></span>
+    </div>
+  </div>
+</form>
+<script type="text/javascript" src="https://js.stripe.com/v3/"></script>
+<script type="text/javascript"  src='/javascripts/checkout.js'/>
